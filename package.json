@@ -12,12 +12,9 @@
     "grunt-contrib-uglify": "^0.2.7",
     "grunt-contrib-watch": "^0.5.3"
   },
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zlwaterfield/ZAPI-UWaterloo"
+    "url": "https://github.com/zlwaterfield/zapi-uwaterloo"
   },
   "keywords": [
     "Waterloo",

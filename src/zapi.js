@@ -2,97 +2,10 @@ var Zapi = (function () {
 
     function Zapi() {}
 
-    Zapi.prototype.foodservices = function(opts, callback) {
-        var url = this.buildBase("foodservices/");
-        var params = opts.parameters;
-        if(params["year"]) {
-            url += params["year"] + "/" + params["week"] + "/" + params["sub_endpoint"];
-
-        } else if(params["sub_endpoint"] === "products") {
-            url += params["sub_endpoint"] + "/" + params["product_id"];
-        } else {
-            url += params["sub_endpoint"];
-        }
-        url += "." + params["format"] + "?key=" + params["api_key"];
-
-        this.get(url, callback);
-    };
-
-    Zapi.prototype.weather = function(opts, callback) {
-        var url = this.buildBase("weather/");
-        var params = opts.parameters;
-        url += params["sub_endpoint"] + "." + params["format"] + "?key=" + params["api_key"];
-
-        this.get(url, callback);
-    };
-
-    Zapi.prototype.resources = function(opts, callback) {
-        var url = this.buildBase("resources/");
-        var params = opts.parameters;
-        url += params["sub_endpoint"] + "." + params["format"] + "?key=" + params["api_key"];
-
-        this.get(url, callback);
-    };
-
     Zapi.prototype.api = function(opts, callback) {
         var url = this.buildBase("api/");
         var params = opts.parameters;
         url += params["sub_endpoint"] + "." + params["format"] + "?key=" + params["api_key"];
-
-        this.get(url, callback);
-    };
-
-    Zapi.prototype.codes = function(opts, callback) {
-        var url = this.buildBase("codes/");
-        var params = opts.parameters;
-        url += params["sub_endpoint"] + "." + params["format"] + "?key=" + params["api_key"];
-
-        this.get(url, callback);
-    };
-    Zapi.prototype.server = function(opts, callback) {
-        var url = this.buildBase("server/");
-        var params = opts.parameters;
-        url += params["sub_endpoint"] + "." + params["format"] + "?key=" + params["api_key"];
-
-        this.get(url, callback);
-    };
-
-    Zapi.prototype.services = function(opts, callback) {
-        var url = this.buildBase("services/");
-        var params = opts.parameters;
-        url += params["site"] + "." + params["format"] + "?key=" + params["api_key"];
-
-        this.get(url, callback);
-    };
-
-    Zapi.prototype.terms = function(opts, callback) {
-        var url = this.buildBase("terms/");
-        var params = opts.parameters;
-        if(params["sub_endpoint"] === "list") {
-            url += params["sub_endpoint"];
-        } else if(params["subject"] && params["catalog_number"]) {
-            url += params["term"] + "/" + params["subject"] + "/" + params["catalog_number"] + "/" + params["sub_endpoint"];
-        } else if(params["subject"]) {
-            url += params["term"] + "/" + params["subject"] + "/" + params["sub_endpoint"];
-        } else {
-            url += params["term"] + "/" + params["sub_endpoint"];
-        }
-        url += "." + params["format"] + "?key=" + params["api_key"];
-
-        this.get(url, callback);
-    };
-
-    Zapi.prototype.news = function(opts, callback) {
-        var url = this.buildBase("news");
-        var params = opts.parameters;
-        if(params["id"] && params["site"]) {
-            url += "/" + params["site"] + "/" + params["id"];
-        } else if(params["site"]) {
-            url += "/" + params["site"];
-        } else {
-
-        }
-        url += "." + params["format"] + "?key=" + params["api_key"];
 
         this.get(url, callback);
     };
@@ -108,6 +21,14 @@ var Zapi = (function () {
             url += "/" + params["sub_endpoint"];
         }
         url += "." + params["format"] + "?key=" + params["api_key"];
+
+        this.get(url, callback);
+    };
+
+    Zapi.prototype.codes = function(opts, callback) {
+        var url = this.buildBase("codes/");
+        var params = opts.parameters;
+        url += params["sub_endpoint"] + "." + params["format"] + "?key=" + params["api_key"];
 
         this.get(url, callback);
     };
@@ -144,6 +65,86 @@ var Zapi = (function () {
             url += "/" +  params["sub_endpoint"];
         }
         url += "." + params["format"] + "?key=" + params["api_key"];
+
+        this.get(url, callback);
+    };
+
+    Zapi.prototype.foodservices = function(opts, callback) {
+        var url = this.buildBase("foodservices/");
+        var params = opts.parameters;
+        if(params["year"]) {
+            url += params["year"] + "/" + params["week"] + "/" + params["sub_endpoint"];
+
+        } else if(params["sub_endpoint"] === "products") {
+            url += params["sub_endpoint"] + "/" + params["product_id"];
+        } else {
+            url += params["sub_endpoint"];
+        }
+        url += "." + params["format"] + "?key=" + params["api_key"];
+
+        this.get(url, callback);
+    };
+
+    Zapi.prototype.news = function(opts, callback) {
+        var url = this.buildBase("news");
+        var params = opts.parameters;
+        if(params["id"] && params["site"]) {
+            url += "/" + params["site"] + "/" + params["id"];
+        } else if(params["site"]) {
+            url += "/" + params["site"];
+        } else {
+
+        }
+        url += "." + params["format"] + "?key=" + params["api_key"];
+
+        this.get(url, callback);
+    };
+
+    Zapi.prototype.resources = function(opts, callback) {
+        var url = this.buildBase("resources/");
+        var params = opts.parameters;
+        url += params["sub_endpoint"] + "." + params["format"] + "?key=" + params["api_key"];
+
+        this.get(url, callback);
+    };
+
+    Zapi.prototype.server = function(opts, callback) {
+        var url = this.buildBase("server/");
+        var params = opts.parameters;
+        url += params["sub_endpoint"] + "." + params["format"] + "?key=" + params["api_key"];
+
+        this.get(url, callback);
+    };
+
+    Zapi.prototype.services = function(opts, callback) {
+        var url = this.buildBase("services/");
+        var params = opts.parameters;
+        url += params["site"] + "." + params["format"] + "?key=" + params["api_key"];
+
+        this.get(url, callback);
+    };
+
+    Zapi.prototype.terms = function(opts, callback) {
+        var url = this.buildBase("terms/");
+        var params = opts.parameters;
+        if(params["sub_endpoint"] === "list") {
+            url += params["sub_endpoint"];
+        } else if(params["subject"] && params["catalog_number"]) {
+            url += params["term"] + "/" + params["subject"] + "/" + params["catalog_number"] + "/" + params["sub_endpoint"];
+        } else if(params["subject"]) {
+            url += params["term"] + "/" + params["subject"] + "/" + params["sub_endpoint"];
+        } else {
+            url += params["term"] + "/" + params["sub_endpoint"];
+        }
+        url += "." + params["format"] + "?key=" + params["api_key"];
+
+        this.get(url, callback);
+    };
+
+    Zapi.prototype.weather = function(opts, callback) {
+        var url = this.buildBase("weather/");
+        var params = opts.parameters;
+        url += params["sub_endpoint"] + "." + params["format"] + "?key=" + params["api_key"];
 
         this.get(url, callback);
     };
