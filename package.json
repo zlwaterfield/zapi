@@ -1,5 +1,5 @@
 {
-  "name": "ZAPI-UWaterloo",
+  "name": "zapi-uwaterloo",
   "version": "0.0.1",
   "description": "Api Library to make it easy to access data from the University Of Waterloo's API",
   "main": "Gruntfile.js",
@@ -27,7 +27,7 @@
   "author": "Zach Waterfield <zlwaterfield@gmail.com> (zlwaterfield.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zlwaterfield/ZAPI-UWaterloo/issues"
+    "url": "https://github.com/zlwaterfield/zapi-uwaterloo/issues"
   },
-  "homepage": "https://github.com/zlwaterfield/ZAPI-UWaterloo"
+  "homepage": "https://github.com/zlwaterfield/zapi-uwaterloo"
 }
