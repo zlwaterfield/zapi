@@ -28,7 +28,7 @@ Browser Installation
 You'll have to host the library yourself, so:
 
 ```html
-<script src="your/path/to/mixpanel_data_export.min.js"></script>
+<script src="your/path/to/zapi.min.js"></script>
 ```
 
 Full list of methods supported
@@ -66,3 +66,9 @@ var zapi_uwaterloo = require('zapi-uwaterloo');
 ```
 
 Api Documentation can be found [here](https://github.com/uWaterloo/api-documentation).
+
+
+Issues
+------
+
+Any issues, report them [here](https://github.com/zlwaterfield/zapi-uwaterloo/issues).
