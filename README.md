@@ -1,4 +1,4 @@
-zapi-uwaterloo (v 0.0.2)
+zapi-uwaterloo (v 0.0.3)
 ========================
 
 Introduction
