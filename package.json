@@ -1,6 +1,6 @@
 {
   "name": "zapi-uwaterloo",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Api Library to make it easy to access data from the University Of Waterloo's API",
   "main": "Gruntfile.js",
   "dependencies": {

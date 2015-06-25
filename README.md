@@ -1,4 +1,4 @@
-zapi-uwaterloo (v 0.0.3)
+zapi-uwaterloo (v 1.0.0)
 ========================
 
 Introduction
@@ -6,12 +6,6 @@ Introduction
 This is the first of a group of Javascript components in a Library built to makes the api's easy for anyone to use.
 
 This component is built for [UWaterloo's](https://api.uwaterloo.ca/) api.
-
-First run
----------
-```
-npm install zapi-uwaterloo --save
-```
 
 Requirements
 ------------
@@ -22,10 +16,24 @@ Requirements
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 ```
 
-Browser Installation
+Install
+---------
+```
+npm install zapi-uwaterloo --save
+```
+
+
+User
 --------------------
 
-You'll have to host the library yourself, so:
+You'll have to host the library yourself, so either
+
+ - Require
+ ```javascript
+ var zapi_uwaterloo = require('zapi-uwaterloo');
+ ```
+  
+ - Pull in with script
 
 ```html
 <script src="your/path/to/zapi.min.js"></script>
@@ -50,10 +58,6 @@ Full list of methods supported
 Example
 -------
 
-```javascript
-var zapi_uwaterloo = require('zapi-uwaterloo');
-```
- 
 ```javascript
  zapi = new zapi_uwaterloo();
  
