@@ -23,17 +23,17 @@ npm install zapi-uwaterloo --save
 ```
 
 
-User
+Use
 --------------------
 
 You'll have to host the library yourself, so either
 
  - Require
- ```javascript
- var zapi_uwaterloo = require('zapi-uwaterloo');
- ```
+```javascript
+var zapi_uwaterloo = require('zapi-uwaterloo');
+```
   
- - Pull in with script
+ - Pull in with script (in html)
 
 ```html
 <script src="your/path/to/zapi.min.js"></script>
