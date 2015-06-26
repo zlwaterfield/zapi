@@ -140,7 +140,7 @@ var Zapi = (function () {
 
         this.get(url, callback);
     };
-    
+
     Zapi.prototype.weather = function(opts, callback) {
         var url = this.buildBase("weather/");
         var params = opts.parameters;

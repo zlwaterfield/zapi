@@ -16,8 +16,8 @@ module.exports = function (grunt) {
                 stripBanners: true
             },
             dist: {
-                src: ['src/zapi.js'],
-                dest: 'dist/zapi.js'
+                src: ['src/zapi-uwaterloo.js'],
+                dest: 'dist/zapi-uwaterloo.js'
             }
         },
         uglify: {
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: '<%= concat.dist.dest %>',
-                dest: 'dist/zapi.min.js'
+                dest: 'dist/zapi-uwaterloo.min.js'
             }
         },
         jshint: {
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
                 boss: true
             },
             lib: {
-                src: 'src/zapi.js'
+                src: 'src/zapi-uwaterloo.js'
             }
         },
         watch: {
@@ -65,7 +65,7 @@ module.exports = function (grunt) {
                 files: [
                     'examples/index.html',
                     'examples/*.js',
-                    'src/zapi.js'
+                    'src/zapi-uwaterloo.js'
                 ]
             }
         },

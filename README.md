@@ -36,7 +36,7 @@ var zapi_uwaterloo = require('zapi-uwaterloo');
  - Pull in with script (in html)
 
 ```html
-<script src="your/path/to/zapi.min.js"></script>
+<script src="your/path/to/zapi-uwaterloo.min.js"></script>
 ```
 
 Full list of methods supported
