@@ -6,7 +6,7 @@ var zapi = new Zapi();
 
 var paramsApi =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     sub_endpoint: "usage"
 };
@@ -25,7 +25,7 @@ function buttonApi() {
 
 var paramsBuildings =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     building_code: "CPH"
 };
@@ -44,7 +44,7 @@ function buttonBuildings() {
 
 var paramsCodes =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     sub_endpoint: "instructions"
 };
@@ -63,7 +63,7 @@ function buttonCodes() {
 
 var paramsCourses =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     sub_endpoint: "examschedule",
     subject: "ECE",
@@ -84,7 +84,7 @@ function buttonCourses() {
 
 var paramsEvents =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "xml",
     sub_endpoint: "holidays"
 };
@@ -104,7 +104,7 @@ function buttonEvents() {
 
 var paramsFood =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     sub_endpoint: "menu",
     year: 2010,
@@ -125,7 +125,7 @@ function buttonFood() {
 
 var paramsNews =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     site: "science"
 };
@@ -143,7 +143,7 @@ function buttonNews() {
 
 var paramsResources =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     sub_endpoint: "printers"
 };
@@ -162,7 +162,7 @@ function buttonResources() {
 
 var paramsServices =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     site: "arts-computing"
 };
@@ -181,7 +181,7 @@ function buttonServices() {
 
 var paramsServer =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     sub_endpoint: "time"
 };
@@ -200,7 +200,7 @@ function buttonServer() {
 
 var paramsTerms =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     sub_endpoint: "schedule",
     term: 1139,
@@ -222,7 +222,7 @@ function buttonTerms() {
 
 var paramsWeather =
 {
-    api_key: "d8cb47df8f51e2fdf0b77b5b740ddf88",
+    api_key: {api_key},
     format: "json",
     sub_endpoint: "current"
 };
