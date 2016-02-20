@@ -1,9 +1,12 @@
+![alt text](http://zlwaterfield.com/images/projects/zapi-small.png "Logo")
+
 zapi-uwaterloo (v 1.0.0)
 ========================
 
 Introduction
 ------------
-This is the first of a group of Javascript components in a Library built to makes the api's easy for anyone to use.
+
+Zapi is a JavaScript library built to help developers easily connect to uwaterloo api.
 
 This component is built for [UWaterloo's](https://api.uwaterloo.ca/) api.
 
@@ -69,7 +72,11 @@ Example
  });
 ```
 
-Api Documentation can be found [here](https://github.com/uWaterloo/api-documentation).
+ [Api Documentation](https://github.com/uWaterloo/api-documentation)
+
+ [Github Page](http://github.com/zlwaterfield/zapi-uwaterloo)
+
+ [NPM Module](https://www.npmjs.com/package/zapi-uwaterloo)
 
 
 Issues
